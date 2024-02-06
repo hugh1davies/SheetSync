@@ -44,7 +44,7 @@ An intuitive Python application for downloading and compiling sheet music from Y
 3. Follow the on-screen instructions to use the application.
 
 
-# How to Use 
+## How to Use 
 
 ### 1️⃣ Program Interface:
 
