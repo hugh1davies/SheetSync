@@ -43,6 +43,29 @@ An intuitive Python application for downloading and compiling sheet music from Y
 2. **Run the Application**: Double-click the executable file to launch the application.
 3. Follow the on-screen instructions to use the application.
 
+
+# How to Use 
+
+### 1️⃣ Program Interface:
+
+
+Upon running the program, a graphical user interface (GUI) will appear. Here's how to use the different components of the interface:
+
+- ⚙️ **Source Type:** Select the source type (YouTube or local MP4) from the radio buttons.
+- 🔗 **YouTube Link or MP4 File Path:** Enter the YouTube video link or local MP4 file path in the respective entry field.
+- 🖼️ **Number of Images per Page:** Specify the number of sheet music images to display per page in the PDF.
+- 📏 **PDF Orientation:** Choose the orientation of the PDF (portrait or landscape) using the radio buttons.
+- 🔄 **AI Upscaler:** Enable or disable AI upscaling for the sheet music images using the radio buttons.
+- 📄 **Include Title Page:** Check this box to include a title page in the PDF.
+- 📥 **Download Button:** Click this button to download the sheet music and proceed to the image selection phase.
+- 🖼️ **Image Selection:** After downloading the sheet music, a new window will appear displaying the extracted sheet music images. You can select/deselect images by clicking on them. Use Ctrl + A to select all images or press Backspace to delete the last selected image.
+- 📄 **Create PDF Button:** Once you've selected the desired images, click this button to generate the PDF containing the selected sheet music images.
+
+### 2️⃣ Output:
+
+The program will create a folder named `pdf` inside the selected folder (where the downloaded images are stored). Inside the `pdf` folder, you'll find the generated PDF file named `sheet_music.pdf`.
+
+
 ## Dependencies
 
 If running the Python script:
