@@ -1,5 +1,8 @@
 # 🎵 Sheet Music Downloader 🎶
 
+![sheet_music_downloader_logo (1)](https://github.com/hugh1davies/SheetSync/assets/78705624/41bacb54-dccb-4041-8c54-736d18b2c840)
+
+
 An intuitive Python application for downloading and compiling sheet music from YouTube videos or local MP4 files into a convenient PDF document. Available both as a Python script and an executable file for easy usage.
 
 ## Features
@@ -62,3 +65,4 @@ Special thanks to the developers of the libraries used in this project for their
 ## Contributing
 
 Contributions are welcome! Feel free to open an issue or submit a pull request.
+
