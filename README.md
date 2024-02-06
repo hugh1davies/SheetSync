@@ -1,6 +1,6 @@
 # 🎵 Sheet Music Downloader 🎶
 
-An intuitive Python application for downloading and compiling sheet music from YouTube videos or local MP4 files into a convenient PDF document.
+An intuitive Python application for downloading and compiling sheet music from YouTube videos or local MP4 files into a convenient PDF document. Available both as a Python script and an executable file for easy usage.
 
 ## Features
 
@@ -24,14 +24,25 @@ An intuitive Python application for downloading and compiling sheet music from Y
 
 ## Usage
 
-1. Install the required Python modules by running `python install_requirements.py`.
-2. Run the application by executing `python main.py`.
-3. Choose your source type, provide the link or file path, and customize PDF settings.
-4. Select the frames you want to include in the PDF.
-5. Create your PDF with the click of a button!
+### Python Script
+
+1. **Install Python**: If you haven't already, install Python on your system.
+2. **Download Source Code**: Clone or download the source code of this project.
+3. **Run the Application**: Execute the `sheetsync.py` script:
+    ```
+    python sheetsync.py
+    ```
+4. Follow the on-screen instructions to use the application (It may take a while when launching for the first-time).
+
+### Executable File
+
+1. **Download Executable**: Download the executable file for your operating system.
+2. **Run the Application**: Double-click the executable file to launch the application.
+3. Follow the on-screen instructions to use the application.
 
 ## Dependencies
 
+If running the Python script:
 - `cv2`
 - `numpy`
 - `math`
@@ -51,5 +62,3 @@ Special thanks to the developers of the libraries used in this project for their
 ## Contributing
 
 Contributions are welcome! Feel free to open an issue or submit a pull request.
-
-
