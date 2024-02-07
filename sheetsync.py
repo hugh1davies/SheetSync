@@ -48,6 +48,8 @@ import re
 import yt_dlp
 import requests
 from bs4 import BeautifulSoup
+from tkinter import Scale
+
 
 
 class CustomFPDF(FPDF):
@@ -146,6 +148,15 @@ class SheetMusicDownloader:
         self.include_title_page_checkbox.pack(pady=5)
         
         
+        self.threshold_label = Label(self.window, text="Threshold Value:")
+        self.threshold_label.pack()
+
+        self.threshold_slider = Scale(self.window, from_=180, to=255, orient=HORIZONTAL, length=200,
+                                      command=self.update_threshold)
+        self.threshold_slider.set(254)  # Initial threshold value
+        self.threshold_slider.pack()
+        
+        
         
         
         
@@ -200,6 +211,14 @@ class SheetMusicDownloader:
             elif self.upscale_var.get() == "Enabled":
                 messagebox.showwarning("Upscale Warning", "Enabling AI upscaling can be resource-intensive and may significantly increase the time to create the PDF. Are you sure you want to proceed?")
                 self.upscale_warning_shown = True
+                
+                
+                
+                
+    def update_threshold(self, value):
+        # Update the threshold value based on the slider
+        self.threshold_value = int(value)
+
 
 
     
@@ -374,7 +393,7 @@ class SheetMusicDownloader:
 
                             diff = cv2.absdiff(prev_frame, crop)
                             gray = cv2.cvtColor(diff, cv2.COLOR_BGR2GRAY)
-                            _, thresh = cv2.threshold(gray, 254, 255, cv2.THRESH_BINARY)
+                            _, thresh = cv2.threshold(gray, self.threshold_value, 255, cv2.THRESH_BINARY)
 
                             if np.sum(thresh) == 0:
                                 continue
